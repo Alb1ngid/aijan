@@ -8,6 +8,8 @@ class SuperHero:
         self.catchphrase = catchphrase
 
 
+
+
     def gname(self):
         return f'name: {self.name}'
     def health(self):
@@ -83,3 +85,4 @@ print(sidekick.health())
 print(villain.crit())
 
 
+print(10)
