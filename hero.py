@@ -37,22 +37,32 @@ class Sidekick(SuperHero):
         self.damage = damage
 
     def health(self):
-        return f'squared health: {self.health_points ** 2}'
+     print(f'health is: {self.health_points ** 2}')
+     if self.health_points ** 2:
+         return f'{self.fly} = {True}'
+
 
     def truth(self):
         return True
+
     def crit(self):
         return f'damage is {self.damage ** 2}'
 
 
+
 class AntiHero(SuperHero):
     costume = 'yes'
-    fly = True
+    fly = False
     def __init__(self, name, nickname, superpower, health_points, catchphrase, damage):
         super().__init__(name, nickname, superpower, health_points, catchphrase)
         self.damage = damage
     def health(self):
         return f'multiplied health: {self.health_points ** 2}'
+
+    def health(self):
+     print(f'health is: {self.health_points ** 2}')
+     if self.health_points ** 2:
+         return f'{self.fly} = {True}'
 
 
 class Villain(AntiHero):
@@ -64,10 +74,11 @@ class Villain(AntiHero):
 
 sidekick = Sidekick('Kevin', 'The Deep', 'fish', 8, 'fuck fresca', 1)
 antihero = AntiHero('Hugh', 'Hughie Campbell', 'tempV', 6, 'lier', 9)
+villain = Villain('Billy Butcher', 'Butcher', 'tempV', 1, 'cunt', 100)
 print(sidekick)
 print(antihero)
-# print(sidekick.health())
-# print((sidekick.truth()))
-villain = Villain('Billy Butcher', 'Butcher', 'tempV', 1, 'cunt', 100)
 print(villain)
-print(sidekick.crit())
+print(sidekick.health())
+# print((sidekick.truth()))
+print(villain.crit())
+
