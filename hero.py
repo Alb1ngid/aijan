@@ -73,7 +73,7 @@ class Villain(AntiHero):
 
 
 sidekick = Sidekick('Kevin', 'The Deep', 'fish', 8, 'fuck fresca', 1)
-antihero = AntiHero('Hugh', 'Hughie Campbell', 'tempV', 6, 'lier', 9)
+antihero = AntiHero('Hugh', 'Hughie Campbell', 'tempV', 6, 'liar', 9)
 villain = Villain('Billy Butcher', 'Butcher', 'tempV', 1, 'cunt', 100)
 print(sidekick)
 print(antihero)
@@ -81,4 +81,5 @@ print(villain)
 print(sidekick.health())
 # print((sidekick.truth()))
 print(villain.crit())
+
 
